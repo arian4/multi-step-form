@@ -1,10 +1,15 @@
 import React from "react";
 import { sidebar } from "../../constants/sidebar";
-
+import bg_desktop from "../../assets/images/bg-sidebar-desktop.svg";
 export const Sidebar = ({ activeStep }) => {
   return (
-    <div className="h-full w-full bg-[url('../../../src/assets/images/bg-sidebar-desktop.svg')] bg-no-repeat bg-cover bg-center rounded-md p-4  ">
-      <ul className="h-full  ">
+    <div className="h-full w-full relative  rounded-md p-4 overflow-hidden ">
+      <img
+        src={bg_desktop}
+        alt="bg_desktop"
+        className="absolute left-0 right-0 bottom-0  "
+      />
+      <ul className="h-full absolute z-10">
         {sidebar.map((item, index) => (
           <li key={index} className="mb-5">
             <div className="flex items-center ">

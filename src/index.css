@@ -6,10 +6,10 @@
 
 @layer base {
   html {
-    @apply overflow-hidden;
+    @apply overflow-x-hidden;
   }
   body {
-    @apply font-ubuntu bg-neutral-Magnolia overflow-hidden relative min-h-screen max-h-screen;
+    @apply font-ubuntu bg-neutral-Magnolia overflow-x-hidden relative min-h-screen;
   }
   h4 {
     @apply text-2xl text-primary-Marine_blue font-bold capitalize;

@@ -20,7 +20,7 @@ export const Step5 = () => {
       <motion.img
         src={thankyouIcon}
         alt="thank-you"
-        className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 mb-5"
+        className="w-16 h-16  lg:w-20 lg:h-20 mb-5"
         variants={childVariants}
       />
       <motion.h4 variants={childVariants}>Thank you!</motion.h4>

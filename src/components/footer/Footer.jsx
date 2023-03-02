@@ -12,9 +12,9 @@ export const Footer = () => {
   } = useContext(AppContext);
   return (
     <footer
-      className={`w-full  bg-neutral-White flex items-center ${
+      className={`w-full  bg-neutral-White flex items-start ${
         activeStep > 1 ? "justify-between" : "justify-end"
-      } absolute bottom-0 left-0 right-0 p-3`}
+      } fixed bottom-0 left-0 right-0 h-24 p-4`}
     >
       {activeStep > 1 && (
         <button

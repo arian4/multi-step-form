@@ -21,7 +21,7 @@ export const ButtonContainerLg = ({
             setActiveStep((prev) => prev - 1);
             setDirection(-1);
           }}
-          className="bg-transparent text-neutral-Cool_gray rounded p-2 text-sm font-medium hover:opacity-80 transition"
+          className="bg-transparent text-neutral-Cool_gray rounded p-2  font-medium hover:opacity-80 transition"
         >
           Go Back
         </button>
@@ -53,7 +53,7 @@ export const ButtonContainerLg = ({
           activeStep === 4
             ? "bg-primary-Purplish_blue"
             : "bg-primary-Marine_blue"
-        } text-neutral-Light_gray rounded px-5 py-2 text-sm font-medium hover:opacity-80 transition`}
+        } text-neutral-Light_gray rounded px-5 py-2  font-medium hover:opacity-80 transition`}
       >
         {activeStep === 4 || activeStep === 5 ? "Confirm" : "Next Step"}
       </button>
