@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply overflow-hidden;
+  }
+  body {
+    @apply font-ubuntu bg-neutral-Magnolia overflow-hidden relative min-h-screen max-h-screen;
+  }
+  h4 {
+    @apply text-2xl text-primary-Marine_blue font-bold capitalize;
+  }
+  h3 {
+    @apply text-sm md:text-base text-primary-Marine_blue font-bold capitalize;
+  }
+
+  p {
+    @apply text-neutral-Cool_gray font-normal  my-4 md:text-lg;
+  }
+
+  label {
+    @apply text-primary-Marine_blue;
+  }
+
+  input {
+    @apply transition-all duration-300;
+  }
+}
+
+@layer components {
+  .step-container-box {
+    @apply bg-neutral-White rounded-md shadow-md w-[85%] min-h-[50%] mx-auto left-0 right-0 absolute top-20 p-4;
+  }
+  .step-container-box-lg {
+    @apply bg-neutral-White rounded-md shadow-md grid grid-cols-3 gap-10 w-[80%] xl:w-[60%] p-4;
+  }
+  .not-checked-item {
+    @apply border-neutral-Light_gray border;
+  }
+  .active-checkbox {
+    @apply ring-primary-Marine_blue bg-neutral-Magnolia ring-1;
+  }
+}
